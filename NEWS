@@ -1,0 +1,348 @@
+70
+
+* More collabwrapper fixes (James Cameron)
+
+69
+
+* Add missing file
+
+68
+
+* New translations
+* Fixes to notebook tabs (erilyth)
+
+67
+
+* Updated VTE and Box2D support; cleaned up support for ARM (Ezequiel Pereira)
+
+66
+
+* Cleaner implementation of workaround for old Vte version detection.
+
+65
+
+ENHANCEMENTS:
+* Add tab selection shortcuts (Vikram Ahuja)
+* Add category (Walter Bender)
+
+BUG FIXES:
+* Really old versions of VTE don't have versions (Walter Bender)
+* Catch deprecated method: vte.fork_command_full (Martin Abente)
+* Fix broken Vte.Terminal.set_colors on Fedora 21 (Martin Abente)
+* Code style fixes, pep8 (Vikram Ahuja)
+* Fix tab naming problems (Vikram Ahuja)
+* Ignore Ctrl-w if only one tab open (Vikram Ahuja)
+* Fix tab name changing problems (Sakala Venkata Krishna Rohit)
+* Hide close button if only one tab open, fixes #4818 (Vikram Ahuja)
+
+64
+
+ENHANCEMENTS:
+
+* Control for font size (svineet)
+* Improved tab control (goutamnair7)
+
+63
+
+BUG FIXES:
+* Update some tutorials with fixes from Jean THIERY.
+
+62
+
+BUG FIX:
+* Use local import for physics/elements module (fixed import issue on SoaS).
+
+61
+
+ENHANCEMENT:
+* More hot keys (native)
+
+BUG FIXES:
+* Fix indentation problem in GroupThink (icarito)
+* Fix scrollbar in activity template (icarito)
+
+60
+
+ENHANCEMENT:
+* Added hot keys to open and close tabs (native)
+
+59
+
+BUG FIX:
+* Fixed "output of the program is not fully displayed" (SL #4661)
+  patch by "native <findathar@gmail.com>"
+* Fixed problem with importing sample code into empty notebook
+
+58
+
+BUG FIX:
+* Fixed typo in alert callback name
+
+57
+
+ENHANCEMENTS:
+* Set tab label with file name when loading examples
+* Set focus on text view
+
+BUG FIX:
+* Sort out numerous cases regarding saving/restoring tabs/tabs content
+* Fixed problem with sound check in sugar-build env.
+
+56
+
+ENHANCEMENTS:
+* Don't offer up sound examples if TamTam is not installed
+* Improvement to search for sound resources (Gonzalo Odiard)
+
+BUG FIX:
+* Work around problem importing sugar3.actitity to generate bundle_path
+
+55
+
+ENHANCEMENTS:
+* Export as disutils, as library, as example (Sai Vineet)
+* Edit on multiple tabs (Sai Vineet)
+* Add custom icon selection when saving as Sugar activity (Ignacio Rodriguez)
+* New icons
+
+BUG FIX:
+* keep dialog window on top after cycling between activities
+
+54
+
+ENHANCEMENTS:
+* Add confirmation alert before loading new projects (Emil Dudev)
+* Use open palette instead of treeview (Ignacio Rodriguez)
+* Show/Hide terminal widget (Sai Vineet)
+* Added new examples (math/pi, math/stern-brocot)
+* Added i18n support for examples (Jorge Alberto Gómez López)
+* Added tutorials (Jorge Alberto Gómez López)
+
+BUG FIXES:
+* Reenable copy/paste (Ignacio Rodriguez)
+* Fix problems with sound library
+* Using elements package from Physics
+
+53
+
+BUG FIXES:
+* Replaced the comma-space with a semicolon (no space) to fix a
+  problem with parsing mime_types that prevented Pippy from opening
+  .py files
+* Fixed many issues with export Sugar activity code
+
+50
+
+BUG FIXES:
+* Replaced the comma-space with a semicolon (no space) to fix a
+  problem with parsing mime_types that prevented Pippy from opening .py files
+* Fixed many issues with export Sugar activity code
+
+43
+
+* Fix for export button + icons (Manu Quiñones)
+* Fix the load of already saved examples (Gonzalo Odiard)
+* New translations.
+
+42
+
+*New translations.
+
+41
+
+*New Translations by aman0115, samybt, aputsiaq, khaled, cjl, Myckel, mschlager
+*Division by zero fix for when elapsed time is zero on fast systems, OLPC#11176 James Cameron <quozl@laptop.org>
+*Regen pot, pep8 fixes, Adding save as example option, based on geirea patch on SL#1496,
+Better way to go to TamTamEdit, updating url_update info, removing service_name, Rafael Ortiz <rafael@activitycentral.com>
+*Update MAINTAINERS file, Anish Mangal <anish@sugarlabs.org>
+
+40
+
+*Fix Pippy sound library on non-OLPC OS systems (SL#638)
+*Run graphics (pygame) examples in full screen mode (OLPC#10688)
+
+39
+* Factorial example fix
+* pep8 and pylint cleanup for examples
+
+38
+* Fix svg icons for Pippy
+* Add EditToolbar & modify toolbars for <=0.84 compatibility 
+  (Gonzalo and Anish)
+* Remove the 'dobject'/groupthink submodule
+* Switch activity.info from class to exec
+
+37
+* Remove broken slideshow until it is fixed #2054 (James Cameron)
+* Adapt pippy examples to screen dimensions (except xolyimpics), 
+  dev.laptop.org #9260 (James Cameron)
+
+36
+* Add COPYING based on activity.info license field, verify source file
+  licenses, include LICENSE from Elements upstream SVN, fixes
+  Sugarlabs.org #1571 and laptop.org #9181. (James Cameron)
+* Fixed pippy layout so that it doesn't break at any resolution other 
+  than 1200x900. (Anish Mangal)
+* Moved the start, stop and run buttons to the activity toolbar. 
+  (Anish Mangal)
+
+35
+* Add collaborative editing with Groupthink
+* Fix self-generated bundles by including port/ (and now groupthink/)
+
+34
+* Editor: enable autotabbing, space tabs,
+     and tab size = 2 (to ensure compatability with examples)
+
+33
+* Include XOlympics physics game example
+* Use default Sugar-specified font sizes
+
+32 
+* Trac #607 (SugarLabs), Font size needs to be 10 for Soas
+    (font size of 8 for XO-1 users)
+
+31
+
+* Trac #350 (SugarLabs), Python path set improperly
+ 
+30
+
+* Allow playing sounds identified by full filesystem path in
+  pippy.sound (cscott)
+* Resync Pippy's "Pippy metadata" with its activity.info, etc. (cscott)
+* New default activity icon (Madeleine Ball)
+* Trac #6323: Pippy's terminal and code editor font sizes are too big (brian)
+* Add pippy.physics package and graphics/physics example (brian)
+* Allow UTF-8 in Pippy source files. (cscott)
+
+29
+
+* Trac #8665, cont: further fixes for bundle-building.
+
+28
+
+* Trac #8665: Bundle-building was broken by a Sugar API change (trac #8136)
+
+27
+
+* Use a protected update_url.
+* Updated license information in files; added 'license' field.
+* Reverted bundlebuilder change: using .start("Pippy") makes modern
+  bundlebuilder complain:
+    WARNING:root:bundle_name deprecated, now comes from activity.info
+
+26
+
+* Bundlebuilder API change -- use .start("Pippy") instead of .start().
+
+25
+
+24
+
+23
+
+22
+
+* Add check to not fail on new gtksourceview2 API (erikos)
+
+21
+
+* Add "tree" and "snow" from Dafydd Harries.
+* Give a friendly error message if the audio library isn't found.
+
+20
+
+* Collaboration works; you get a copy of the host's source buffer.
+* We look for the audio library in /home/olpc as well as /usr/share.
+
+19
+
+* #6475: Fix crash on launch when no telepathy connection (morgs)
+
+18
+
+* Updated translations for release.
+
+17
+
+* Attempt to fix Spanish, from Sayamindu.
+
+16
+
+* New "slideshow" example, by cjb.
+
+15
+
+* "View source" now works on both Pippy and Pippy-generated activities!
+
+(From C. Scott Ananian.)
+
+14
+
+* Add pippy.console.size() to get rows/cols, make "thanks" use it.
+
+13
+
+* Pippy can now create activity bundles of user code, using the "Keep As
+  Bundle" icon on the toolbar!
+
+(From C. Scott Ananian.)
+
+12
+
+* Factor out a pippy library, which programs can use with 'import pippy'.
+    
+* The pygame portion of the library uses 'best practices' to avoid eating
+  up CPU, and pauses & suspends after 20 seconds of inactivity.
+
+(From C. Scott Ananian.)
+
+11
+
+* New pygame examples by Henry Holtzman!  "bounce", "camera", "lines", "pong".
+
+10
+
+* Add "guess" example (Pilar Saenz).
+
+9
+
+* Changed sound library location again.  Add "thanks".
+
+8
+
+* Changed location of sound library on filesystem, for build573+.
+
+7
+
+* Remove the "interpreter" banner; we don't provide the help files it mentions
+* Add "Stop!" button to terminate the currently running code.
+
+6
+
+* Add "interpreter" example, by Ivan Krstić.
+* 55px->45px icon, resized by Eben Eliason.
+
+5
+
+* Update to new Tubes API
+* Small example changes
+* Added getSoundList() which returns the list of available sounds for playWave() (Flipo)
+
+4
+
+* Journal integration
+* Sound support!  Thanks to Nat/TamTam team.
+* New examples:  
+   Sierpinski (Madeleine Ball)
+   Recursion (Mel Chua)
+   Fibonacci (Rafael Ortiz)
+
+3
+
+* Added scrollbars, replaced hippo with gtk.
+
+2
+
+* First public release.
